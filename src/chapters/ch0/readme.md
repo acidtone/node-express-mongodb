@@ -16,9 +16,10 @@ SAIT workstations will have this software installed already.
 clone this git repo:
 https://github.com/acidtone/node-express-mongodb
 
-1. Using Git Bash or similar command line interface to navigate to this project on your file system.
-2. `$ vagrant up`
-3. `$ vagrant ssh`
+1. Create a local folder on your C: drive called 'vagrant'
+2. Using Git Bash or similar command line interface to navigate to this (probably empty) directory on your file system.
+3. `$ vagrant up`
+4. `$ vagrant ssh`
 
 ## Rebuild Vagrant
 1. `$ vagrant global-status`
