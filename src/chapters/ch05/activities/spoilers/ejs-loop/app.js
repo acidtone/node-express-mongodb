@@ -10,7 +10,7 @@ app.get('/', function(request, response){
 })
 
 app.get('/:page', function(request, response){
-  response.render(request.params.page, menuInfo);
+  response.render(request.params.page, {menu: menuInfo});
 })
 
 app.listen(3000);
