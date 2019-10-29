@@ -10,6 +10,9 @@ const app = express();
 app.set('view engine','ejs'); // allows us to exclude the file extension
 
 app.get('/:page', function(request, response){
+  if (request.params.page === 'definitions') {
+    pageInfo.definitions.definitions = definitions;
+  }
   response.render(request.params.page,pageInfo[request.params.page]);
 })
 
