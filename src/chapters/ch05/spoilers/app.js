@@ -24,6 +24,7 @@ app.use(requestTime)
 /* See Chapter 04*/
 // Set up our view endpoints
 app.get('/:page', function(request, response){
+  console.log(response.locals);
   response.render(request.params.page,pageInfo[request.params.page]);
 })
 
