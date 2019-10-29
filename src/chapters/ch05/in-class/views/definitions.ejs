@@ -2,7 +2,11 @@
   <main>
     <h1>Definitions</h1>
     <dl>
-
+      <% definitions.forEach(function(definition){ %>
+        <!-- This is ejs/html, not js -->
+        <dt><%= definition.term %></dt>
+        <dd><%= definition.definition %></dd>
+      <% }) %>
 
 <!-- 
       <dt>Syntax Parser</dt>

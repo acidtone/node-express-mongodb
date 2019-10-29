@@ -64,7 +64,7 @@ definitionList = [
     definition: "Something that has happened in our app that we can respond to"
   },
   {
-    term: 'callback function',
+    term: 'Callback Function',
     definition: "A function passed to some other function, which we assume will be invoked at some point"
   },
   {

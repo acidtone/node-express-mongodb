@@ -3,7 +3,7 @@ const path = require('path');
 const pageInfo = require('./pageInfo');
 const definitions = require('./definitions');
 
-// console.log(definitions);
+console.log(typeof definitions);
 
 const app = express();
 
