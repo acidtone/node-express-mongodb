@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 // replace the uri string with your connection string.
 const uri = "mongodb+srv://hagrid:aragogrip@cluster0-1c2nl.mongodb.net/test?retryWrites=true&w=majority"
-MongoClient.connect(uri,{ useUnifiedTopology: true }, function(err, client) {
+MongoClient.connect(uri,{ useUnifiedTopology: true,useNewUrlParser: true }, function(err, client) {
    if(err) {
         console.log('Error occurred while connecting to MongoDB Atlas...\n',err);
    }
