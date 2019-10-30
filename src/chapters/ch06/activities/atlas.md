@@ -8,6 +8,14 @@
 5. Create user
 6. Add sample data
 7. run app: ch06/tool-time/app.js
+  - npm init
+  - npm install express --save --no-bin-link
+  - npm install ejs
+  - npm install mongodb --save --no-bin-link
+  - node app.js
+
+## Install MongoDB Compass
+- install on your host machine (Windows/mac)
 
 ## Deprecation Warning
 Bonus: find a modern way to connect to Atlas?
