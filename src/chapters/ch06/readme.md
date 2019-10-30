@@ -1,5 +1,9 @@
 # Chapter 06
-## Pull Request Review
+## Tool Time
+- shortened bash prompt?
+  - ref: https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work
+  - ref: https://askubuntu.com/questions/145618/how-can-i-shorten-my-command-line-bash-prompt
+- Pull Request Review
 
 ## POST requests
 - background: character encoding
@@ -13,9 +17,9 @@
 - lexical environment of express.urlencoded
 - form vs postman
 - ref: https://flaviocopes.com/express-post-query-variables/
+- HTML5 and PUT, DELETE, PATCH
 
-## MongoDB
-
+## Tool Time Activity: Connecting to MongoDB Atlas
 
 # Slide Synopsis
 ## MVC

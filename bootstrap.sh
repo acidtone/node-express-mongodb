@@ -7,6 +7,7 @@ sudo apt-get install -y nodejs
 # Install MongoDB
 sudo apt-get install -y mongodb
 
+
 # Install NPM
 sudo apt-get install -y npm
 
@@ -16,3 +17,8 @@ sudo npm install -g nodemon --no-optional
 
 # Move user to /vagrant on ssh
 echo "cd /vagrant" >> /home/vagrant/.bashrc
+echo "PS1='\u:\W\$ '" >> /home/vagrant/.bashrc
+
+# Start Mongodb
+# sudo service mongod start
+# sudo systemctl enable mongod.service
