@@ -19,7 +19,7 @@ In this project, you will use the skills and knowledge you've gained to build a 
 All other page requests should return with a 404 error.
 
 ## Instructions
-- Create the two frontend forms ('/profile' and '/login') with valid and accessible html/css
+- Create the two frontend forms ('/profile' and '/login') with valid and accessible (valid fieldset/legend and label tags) html/css
 - Create a POST endpoint for each of these pages in express
 - Add the required redirect functionality given the user's login status
 - Using passport.js and bcrypt, authenticate or reject the user based on their login information (stored in the database)

@@ -1,4 +1,6 @@
-# Day 01
+# Chapter 01
+
+# Slide Synopsis
 ## Housekeeping
 - grading
   - 15%: daily node.js exercises

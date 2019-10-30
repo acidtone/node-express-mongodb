@@ -26,9 +26,9 @@ SAIT workstations will have this software installed already.
 4. `$ vagrant up`
 
 ## Installing Express
-Vagrant doesn't like the symlinks that some node modules (like express) so you will need to install it with the --no-bin-link flag:
+Vagrant doesn't like the symlinks that some node modules (like express) use so you will need to install it with the --no-bin-link flag:
 `$ npm install express --no-bin-link`
-This will not be needed for most modules (generally ones that come with a cli client) but you will need to use this flag if you run into a 'sym-link' error.
+This will not be needed for most modules (generally ones that don't come with a cli client) but you will need to use this flag if you run into a 'sym-link' error.
 
 ## Initializing a new Express app
 1. Browse to the app directory

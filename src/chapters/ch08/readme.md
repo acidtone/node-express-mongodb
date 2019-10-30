@@ -1,4 +1,6 @@
-# Day 08
+# Chapter 08
+
+# Slide Synopsis
 ## Linking Collections
 - update post.js
 - update postController.js

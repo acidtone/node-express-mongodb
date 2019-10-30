@@ -1,4 +1,4 @@
-# Day 05
+# Chapter 05
 ## Embedded JS cont'd
 - <% %>: 'Scriptlet' tag, for control-flow, no output
 - Example: Loops
@@ -10,6 +10,9 @@
 - The Owlery
 - Example: Footer timestamp
 - Activity: Bug hunt!
+
+## Lab Time
+- Activity: Menu Refactoring 
 
 # Slide synopsis
 ## Databases

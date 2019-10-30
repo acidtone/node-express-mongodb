@@ -1,4 +1,4 @@
-# Day 02
+# Chapter 02
 ## Local Modules
 - node modules
 - creating modules

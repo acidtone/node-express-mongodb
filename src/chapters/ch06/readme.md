@@ -1,4 +1,23 @@
-# Day 06
+# Chapter 06
+## Pull Request Review
+
+## POST requests
+- background: character encoding
+  ref: ref: https://www.tutorialspoint.com/html/html_url_encoding.htm
+- enctypes we care about
+  - application/x-www-form-urlencoded
+  - multipart/form-data
+  - text/plain (html5 - no encoding)
+  - ref: https://dev.to/sidthesloth92/understanding-html-form-encoding-url-encoded-and-multipart-forms-3lpa
+- urlencoded vs json
+- lexical environment of express.urlencoded
+- form vs postman
+- ref: https://flaviocopes.com/express-post-query-variables/
+
+## MongoDB
+
+
+# Slide Synopsis
 ## MVC
 - introduction to mvc
 - Example: Basic CMS

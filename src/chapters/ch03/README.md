@@ -1,4 +1,4 @@
-# Day 3: Express, static files and GET endpoints
+# Chapter 3: Express, static files and GET endpoints
 ## Announcements
 - Lunch: Sarah's "community thing"
 - Assignment #2

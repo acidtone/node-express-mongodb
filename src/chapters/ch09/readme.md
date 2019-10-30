@@ -1,4 +1,4 @@
-# Day 09
+# Chapter 09
 ## Deploy Your App
 - introduction to deployment
 - preparing your app

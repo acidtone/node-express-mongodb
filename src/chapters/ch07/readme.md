@@ -1,4 +1,6 @@
-# Day 07
+# Chapter 07
+
+# Slide Synopsis
 ## Authentication
 - introduction to authentication
 - install passport
