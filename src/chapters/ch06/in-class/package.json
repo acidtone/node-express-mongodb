@@ -1,7 +1,7 @@
 {
-  "name": "atlas-connect",
+  "name": "post-request",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testing post request parsers",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
-    "mongodb": "^3.3.3"
+    "express": "^4.17.1"
   }
 }

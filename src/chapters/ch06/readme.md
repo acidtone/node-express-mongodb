@@ -7,7 +7,7 @@
 
 ## POST requests
 - background: character encoding
-  ref: ref: https://www.tutorialspoint.com/html/html_url_encoding.htm
+  ref: https://www.tutorialspoint.com/html/html_url_encoding.htm
 - enctypes we care about
   - application/x-www-form-urlencoded
   - multipart/form-data
