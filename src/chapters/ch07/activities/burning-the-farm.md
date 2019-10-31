@@ -63,9 +63,6 @@ ref: https://docs.atlas.mongodb.com/getting-started/
   - npm install mongodb --save --no-bin-link
   - node app.js
 
-## Install MongoDB Compass
-- install on your host machine (Windows/mac)
-
 ## Deprecation Warning
 *solved*
 Bonus: find a modern way to connect to Atlas?

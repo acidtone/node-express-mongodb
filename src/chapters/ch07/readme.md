@@ -39,6 +39,7 @@ Think of relation DBs as fancy spreadsheets
   - ref: https://docs.mongodb.com/manual/crud/
 - Activity: Explore Atlas
   - ref: https://docs.atlas.mongodb.com/
+- Sample Data Tour
 
 # Slide Synopsis
 ## Authentication
