@@ -41,6 +41,7 @@ To give another dev access to your repo, add them as a Collaborator.
 
 ## Questions to answer
 - Is there a way to save creds when connecting to github over https (so you don't have to type them each time)?
+  - *yes!* reference link added above
 - Can we create more than one free tier cluster?
 - Can we turn off "Whitelist all IPs" if we turn on the VPN?
 

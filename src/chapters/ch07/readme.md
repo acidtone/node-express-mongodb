@@ -9,10 +9,36 @@ See spoilers app
 - documentation: https://www.npmjs.com/package/dotenv
 - ref: https://medium.com/@thejasonfile/using-dotenv-package-to-create-environment-variables-33da4ac4ea8f
 
-## MongoDB
-See Activity: Explore Atlas
+## Traditional relational databases
 
-- ref: https://docs.atlas.mongodb.com/
+Think of relation DBs as fancy spreadsheets
+
+- objects
+  - database (spreadsheet file)
+    - tables (spreadsheet tabs)
+      - columns (sometimes called fields)
+      - rows
+    - joins
+- contraints
+  - data types: what data type the column accepts
+  - primary keys: restricts the id of the table (unique, int, etc)
+  - check constraints: what values a column can contain
+  - foreign keys: relate a column value of one field to the id of another
+- CRUD
+  - query language
+- schemas
+- common engines
+  - mysql
+  - postgresql
+  - oracle
+  - SQL Server
+
+## MongoDB
+- Slides 148-168
+- CRUD operations
+  - ref: https://docs.mongodb.com/manual/crud/
+- Activity: Explore Atlas
+  - ref: https://docs.atlas.mongodb.com/
 
 # Slide Synopsis
 ## Authentication
