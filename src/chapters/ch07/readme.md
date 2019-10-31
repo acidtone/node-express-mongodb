@@ -6,6 +6,7 @@ See Activity: Burn the Farm
 ## dotenv
 See spoilers app
 
+- documentation: https://www.npmjs.com/package/dotenv
 - ref: https://medium.com/@thejasonfile/using-dotenv-package-to-create-environment-variables-33da4ac4ea8f
 
 ## MongoDB

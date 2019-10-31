@@ -37,5 +37,9 @@ This will not be needed for most modules (generally ones that don't come with a 
 2. `npm init`
 3. Fill in the information for the wizard (defaults are usually ok)
 4. Install Express:
-5. `npm install express --no-bin-link`
-6. `npm install ejs` (or `pug`)
+5. `npm install express --save --no-bin-link`
+6. `npm install ejs --save` (or `pug`)
+7. `npm install dotenv --save`
+
+For MongoDB
+1. `npm install mongodb --no-bin-link --save`
