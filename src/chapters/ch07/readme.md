@@ -1,5 +1,18 @@
 # Chapter 07
 
+## Git: Private Repos and authentication
+See Activity: Burn the Farm
+
+## dotenv
+See spoilers app
+
+- ref: https://medium.com/@thejasonfile/using-dotenv-package-to-create-environment-variables-33da4ac4ea8f
+
+## MongoDB
+See Activity: Explore Atlas
+
+- ref: https://docs.mongodb.com/manual/reference/mongo-shell/
+
 # Slide Synopsis
 ## Authentication
 - introduction to authentication

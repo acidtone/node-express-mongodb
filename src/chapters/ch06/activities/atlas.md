@@ -1,5 +1,7 @@
 # Activity: Connecting to MongoDB Atlas
 ## MongoDB Atlas
+ref: https://docs.atlas.mongodb.com/getting-started/
+
 1. Create MongoDB Atlas account
 2. Create cluster
   - I chose AWS N. Oregon
