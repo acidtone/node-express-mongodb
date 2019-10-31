@@ -32,8 +32,10 @@ This will not be needed for most modules (generally ones that don't come with a 
 
 ## Initializing a new Express app
 1. Browse to the app directory
+  - name this directory the same as your app name (this sets app name default for `npm init`)
+  - create an app.js file in this directory (this sets the entry point default for `npm init`)
 2. `npm init`
 3. Fill in the information for the wizard (defaults are usually ok)
 4. Install Express:
 5. `npm install express --no-bin-link`
-
+6. `npm install ejs` (or `pug`)
