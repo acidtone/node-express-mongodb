@@ -20,5 +20,5 @@ echo "cd /vagrant" >> /home/vagrant/.bashrc
 echo "PS1='\u:\W\$ '" >> /home/vagrant/.bashrc
 
 # Start Mongodb
-# sudo systemctl enable mongodb.service
-# sudo service mongodb start
+sudo systemctl enable mongodb.service
+sudo service mongodb start
