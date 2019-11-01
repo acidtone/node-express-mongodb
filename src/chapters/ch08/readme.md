@@ -1,4 +1,26 @@
 # Chapter 08
+## Tool Time: Command line arguments
+- ref: https://flaviocopes.com/node-cli-args/
+
+## Navigating Mongo Atlas
+Tour:
+- Database Access
+  - read/write, not admin
+- Network Access
+  - do NOT whitelist all IPs
+- clusters
+  - connection
+  - collections
+    - dbs
+    - collections
+    - records
+
+## Mongo CRUD operations
+- setting collections
+- creating collections
+- insertOne
+- install fixture
+- insertMany
 
 # Slide Synopsis
 ## Linking Collections
