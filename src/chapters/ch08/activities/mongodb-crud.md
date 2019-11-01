@@ -17,7 +17,6 @@ Today's the day! Let's practice CRUD with mongoDB. Build a single app.js file an
 
 ## Retrieve
 - find()
-- findOne()
 
 ## Optional
 - findOneAndUpdate
