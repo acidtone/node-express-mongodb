@@ -27,6 +27,12 @@ app.get('/', function(request, response){
   response.render('index',pageInfo.index);
 })
 
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(404).send('File Not Found :(')
+  res.status(500).send('Something broke, sorry...')
+})
+
 app.use(express.static(path.join(__dirname, 'assets')));
 
 const PORT = process.env.PORT || 3000;
