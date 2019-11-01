@@ -22,6 +22,10 @@ Tour:
 - install fixture
 - insertMany
 
+## Mongoose Intro
+- ref: https://mongoosejs.com/docs/
+- ref: https://mongoosejs.com/docs/models.html
+
 # Slide Synopsis
 ## Linking Collections
 - update post.js
