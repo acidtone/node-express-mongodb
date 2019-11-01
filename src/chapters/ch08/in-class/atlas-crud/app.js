@@ -70,5 +70,5 @@ else if (flag === 'buildDB') {
 /* Find() */
 /***************/
 
-   client.close();
+  client.close();
 });
