@@ -11,7 +11,7 @@ See spoilers app
 ## MongoDB
 See Activity: Explore Atlas
 
-- ref: https://docs.atlas.mongodb.com/
+- ref: https://docs.mongodb.com/manual/reference/mongo-shell/
 
 # Slide Synopsis
 ## Authentication
