@@ -22,9 +22,7 @@ app.set('view engine','ejs');
 app.get('/', async function(request, response) {
   try {
 
-    // let definitions = await Definition.find({});
-
-    const definitions = await Definition.find({});
+    const definitions = await Definition.find();
     response.render('index',{definitions: definitions});
 
   } catch (err) {
