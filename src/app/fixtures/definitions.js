@@ -72,3 +72,5 @@ definitionList = [
     definition: "Callbacks that take an error object as their first parameter"
   }
 ]
+
+module.exports = definitionList;
