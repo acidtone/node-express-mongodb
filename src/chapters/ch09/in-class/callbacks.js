@@ -26,12 +26,15 @@ function getPosts() {
   }, 1000);
 }
 
-function createPost(post) {
+function createPost(post, callback) {
   setTimeout(function(){
     posts.push(post);
+    console.log('Post created');
+
+    callback();
   }, 999); 
 }
 
-createPost(post);
+createPost(post, getPosts);
 
-getPosts();
+// getPosts();
