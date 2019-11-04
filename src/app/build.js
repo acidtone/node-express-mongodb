@@ -29,12 +29,13 @@ MongoClient.connect(uri,{ useUnifiedTopology: true,useNewUrlParser: true }, func
   const userCol = db.collection('users');
 
   userCol.drop();
-  // const hashedUsers = users.map(function(user){
-  //   user.password = bcrypt.hashSync(user.password, 10);
-  //   return user;
-  // });
+  
+  const hashedUsers = users.map(function(user){
+    user.password = bcrypt.hashSync(user.password, 10);
+    return user;
+  });
 
-  userCol.insertMany(users, function(err, cursor) {
+  userCol.insertMany(hashedUsers, function(err, cursor) {
    if (err) {
      console.log('There was a problem');
    }
