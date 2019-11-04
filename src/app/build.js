@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
-const definitions = require('./definitions');
+const definitions = require('./fixtures/definitions');
 
 const uri = process.env.DB_CONNECTION;
 MongoClient.connect(uri,{ useUnifiedTopology: true,useNewUrlParser: true }, function(err, client) {
@@ -12,11 +12,11 @@ MongoClient.connect(uri,{ useUnifiedTopology: true,useNewUrlParser: true }, func
 
    const db = client.db("glossary");
 
-   const collection = db.collection('definitions');
+   const defCol = db.collection('definitions');
 
-   collection.drop();
+   defCol.drop();
 
-   collection.insertMany(definitions, function(err, cursor) {
+   defCol.insertMany(definitions, function(err, cursor) {
     if (err) {
       console.log('There was a problem');
     }

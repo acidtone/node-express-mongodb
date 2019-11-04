@@ -54,9 +54,9 @@ definitionList = [
   {
     term: 'module',
     definition: "A reusable block of code whose existence does not accidentally impact other code"
-    },
-    {
-      term: 'namespace',
+  },
+  {
+    term: 'namespace',
     definition: "A container for variables and functions"
   },
   {
@@ -72,3 +72,5 @@ definitionList = [
     definition: "Callbacks that take an error object as their first parameter"
   }
 ]
+
+module.exports = definitionList;
