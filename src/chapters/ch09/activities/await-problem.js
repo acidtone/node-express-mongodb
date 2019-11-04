@@ -19,4 +19,11 @@ function formal(data){
   console.log(`Greetings, ${data.salutation} ${data.lastName}.`);
 }
 
-greet(threat).then(greet(formal));
+async function init() {
+  await greet(threat);
+  greet(formal);
+}
+
+init();
+
+// greet(threat).then(greet(formal));
