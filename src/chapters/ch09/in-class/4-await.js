@@ -46,8 +46,15 @@ function createPost(post) {
   })
 }
 
-createPost(post)
-  .then(getPosts)
-  .catch(function(error){console.log(error)});
+async function init() {
+  await createPost(post);
+  getPosts();
+}
+
+init();
+
+// createPost(post)
+//   .then(getPosts)
+//   .catch(function(error){console.log(error)});
 
 // getPosts();
