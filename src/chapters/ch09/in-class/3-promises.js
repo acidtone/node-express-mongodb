@@ -26,15 +26,28 @@ function getPosts() {
   }, 1000);
 }
 
-function createPost(post, callback) {
-  setTimeout(function(){
-    posts.push(post);
-    console.log('Post created');
+function createPost(post) {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function(){
+      posts.push(post);
+      console.log('Post created');
 
-    callback();
-  }, 999); 
+      const error = false;
+
+      if (!error) {
+        // invoke .then
+        resolve();
+      } else {
+        // invoke .catch
+        reject('Error: something bad happened');
+      }
+    }, 999); 
+
+  })
 }
 
-createPost(post, getPosts);
+createPost(post)
+  .then(getPosts)
+  .catch(function(error){console.log(error)});
 
 // getPosts();
