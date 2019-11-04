@@ -1,13 +1,14 @@
 function greet(callback) {
+  return new Promise(function(resolve,reject){
+    const data = {
+      firstName: "John",
+      lastName: "Wick",
+      salutation: "Mr."
+    }
 
-  const data = {
-    firstName: "John",
-    lastName: "Wick",
-    salutation: "Mr."
-  }
-
-  callback(data);
-
+    callback(data);
+    resolve(); 
+  })
 }
 
 function threat(data) {
@@ -18,6 +19,4 @@ function formal(data){
   console.log(`Greetings, ${data.salutation} ${data.lastName}.`);
 }
 
-greet(threat);
-
-greet(formal);
+greet(threat).then(greet(formal));
