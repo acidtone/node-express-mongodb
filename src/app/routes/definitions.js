@@ -22,8 +22,8 @@ defRoutes.get('/new', async function(request, response) {
 defRoutes.post("/", function(request, response) {
   const definition = new Definition(request.body);
   console.log('post /');
-  error = definition.validateSync();
-  console.log();
+  // error = definition.validateSync();
+  // console.log();
 
   definition.save(err => {
       if (err) throw err;

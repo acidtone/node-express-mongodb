@@ -4,6 +4,7 @@
 
 ## Anatomy of an Express app
 ### build checklist
+- add project folder and create app.js (empty)
 - npm init
 - install dependencies
   - express
