@@ -1,6 +1,9 @@
 const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
+
+const defRouter = require('./routes/definitions');
 
 const app = express();
 app.set('view engine','ejs');
@@ -19,6 +22,9 @@ db.once('open', function() {
 app.get('/', function(request, response){
   response.render('index');
 })
+
+// add definition route
+app.use('/definitions', defRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 

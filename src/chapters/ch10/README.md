@@ -25,7 +25,7 @@
 - define routes
   - GET "/"
   - GET "/definitions"
-  - GET "/new"
+  - GET "/defintions/new"
   - POST "/definitions"
 
 ## Lab time
