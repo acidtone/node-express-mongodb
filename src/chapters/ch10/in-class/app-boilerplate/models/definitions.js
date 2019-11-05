@@ -9,9 +9,6 @@ const definitionSchema = new mongoose.Schema(
     definition: {
       type: String,
       require: true
-    },
-    slug: {
-      type: String
     }
   }
 );
