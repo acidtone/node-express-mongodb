@@ -18,6 +18,7 @@ db.once('open', function() {
   console.log('DB Connected!!!');
 });
 
+// GET "/"
 
 app.get('/', function(request, response){
   response.render('index');
