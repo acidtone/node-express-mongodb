@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
-const Definition = require('./models/definitions');
-
+// const Definition = require('./models/definitions');
+const definitionRoutes = require("./routes/definitions");
 const app = express();
 mongoose.set('debug', true);
 
@@ -18,6 +18,7 @@ db.once('open', function() {
 
 app.set('view engine','ejs');
 
+app.use('/definitions', definitionRoutes);
 
 app.get('/', async function(request, response) {
   try {
