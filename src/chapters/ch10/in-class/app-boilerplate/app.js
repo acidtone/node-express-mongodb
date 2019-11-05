@@ -3,16 +3,14 @@ const path = require('path');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 
-// now required in routes
-// const Definition = require('./models/definitions');
-const defRoutes = require("./routes/definitions");
+const defRouter = require('./routes/definitions');
 
 const app = express();
 app.set('view engine','ejs');
+// optional: include if accepting post data
 app.use(express.urlencoded({extended: true}));
 
 mongoose.connect(process.env.DB_CONNECTION, { useUnifiedTopology: true,useNewUrlParser: true });
-
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -20,12 +18,14 @@ db.once('open', function() {
   console.log('DB Connected!!!');
 });
 
+// GET "/"
+
 app.get('/', function(request, response){
   response.render('index');
 })
 
-app.use('/definitions', defRoutes);
-// app.use('/users', defUsers);
+// add definition route
+app.use('/definitions', defRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
