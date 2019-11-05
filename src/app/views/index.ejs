@@ -1,11 +1,16 @@
-<%- include partials/header %>
-  <main>
-    <h1>Definitions</h1>
-    <dl>
-      <% definitions.forEach(function(definition){ %>
-        <dt><%= definition.term %></dt>
-        <dd><%= definition.definition %></dd>
-      <% }) %>
-    </dl>
-  </main>
-  <%- include partials/footer %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello World!</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/definitions">Glossary</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -2,10 +2,14 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
+
+// now required in routes
 // const Definition = require('./models/definitions');
-const definitionRoutes = require("./routes/definitions");
+const defRoutes = require("./routes/definitions");
+
 const app = express();
-mongoose.set('debug', true);
+app.set('view engine','ejs');
+app.use(express.urlencoded({extended: true}));
 
 mongoose.connect(process.env.DB_CONNECTION, { useUnifiedTopology: true,useNewUrlParser: true });
 
@@ -16,24 +20,11 @@ db.once('open', function() {
   console.log('DB Connected!!!');
 });
 
-app.set('view engine','ejs');
+app.get('/', function(request, response){
+  response.render('index');
+})
 
-app.use('/definitions', definitionRoutes);
-
-app.get('/', async function(request, response) {
-  try {
-
-    const definitions = await Definition.find({});
-    response.render('index',{definitions: definitions});
-
-  } catch (err) {
-    return res.status(500).send(err);
-  }
-});
-
-// app.get('/', function(request, response){
-//   response.render('index',{definitions: definitions});
-// })
+app.use('/definitions', defRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -42,7 +33,7 @@ app.use(function(req, res, next) {
   res.send('404: File Not Found');
 });
 
-const PORT = process.env.PORT || 'poo';
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function(){
   console.log(`Listening on port ${PORT}`);
