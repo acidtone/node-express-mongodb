@@ -25,6 +25,7 @@ app.get('/', function(request, response){
 })
 
 app.use('/definitions', defRoutes);
+// app.use('/users', defUsers);
 
 app.use(express.static(path.join(__dirname, 'public')));
 

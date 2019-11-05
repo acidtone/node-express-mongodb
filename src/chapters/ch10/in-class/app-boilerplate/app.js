@@ -7,6 +7,15 @@ app.set('view engine','ejs');
 // optional: include if accepting post data
 app.use(express.urlencoded({extended: true}));
 
+mongoose.connect(process.env.DB_CONNECTION, { useUnifiedTopology: true,useNewUrlParser: true });
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log('DB Connected!!!');
+});
+
+
 app.get('/', function(request, response){
   response.render('index');
 })

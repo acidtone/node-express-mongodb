@@ -12,20 +12,21 @@
   - dotenv
   - ejs
 - boot express
+- set home page
+- install middlewares
+  - urlencoded/json: needed only for post requests
+  - static
+  - catch 404s
+- set and list server:port
 - boot mongoose
   - set .env
   - create and set connection
   - /models -> routes
-- install middlewares
-  - urlencoded
-  - static
-  - catch 404s
-- set home page
 - define routes
   - GET "/"
   - GET "/definitions"
   - GET "/new"
   - POST "/definitions"
-- set and list server:port
 
 ## Lab time
+- 
