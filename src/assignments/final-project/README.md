@@ -1,5 +1,7 @@
 # Final Project – Node.js
 
+*Important*: express routes may require you to use the upgraded vagrant bootstrap.sh included in the root of this repo. After you `vagrant up`, type `vagrant provision` to updgrade (if you can't tell the difference, bootstrap.sh uses apt instead of apt-get).
+
 ## Purpose
 
 The Node.js workshop brings together the concepts and skills you have been working on during the past severals days of the course by having you customize a website and add server-side programming enhancements to them. This project focuses on good coding practices, model routing and web server architecture.
