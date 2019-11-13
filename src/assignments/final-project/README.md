@@ -55,7 +55,7 @@ Refactor the functionality in Assignment 3 so that it uses a middleware route th
 ### 3. Build new blog post functionality. (5 points)
 Build a new route that serves blog articles both as a list and individually based in its slug. This route should handle the following endpoints:
 
-- GET   /posts
+- GET   /articles
   - serves a list of all posts in the collection
 - GET   /articles/:slug
   - serves one post that has a matching slug
