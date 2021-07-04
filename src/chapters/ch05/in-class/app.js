@@ -19,13 +19,22 @@ app.use(requestTime)
 app.get('/:page', function(request, response){
   if (request.params.page === 'definitions') {
     pageInfo.definitions.definitions = definitions;
+  } else {
+    
   }
   response.render(request.params.page,pageInfo[request.params.page]);
+  
+  if (request.accepts('js')) {
+    response.send('404 NOT FOUND');
+    return;
+  }
 })
 
 app.get('/', function(request, response){
   response.render('index',pageInfo.index);
 })
+
+
 
 app.use(express.static(path.join(__dirname, 'assets')));
 
